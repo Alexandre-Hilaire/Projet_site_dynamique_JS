@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+.contact {
+    background-color: aqua;
+}
+.legal-mentions{
+    background-color: aqua;
+}
+.social-networks {
+    background-color: aqua;
+}
+
+@media screen and (max-width: 800px) {
+    
+}
+@media screen and (max-width: 1920px) {
+
+}
+@media scren and (max-width: 3440px) {
+
+}
