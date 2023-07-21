@@ -12,7 +12,7 @@ function shows_data(data_pokemons){
     let pokemons_url = [];
     let pokemons_img_url = [];
     for (let i = 0; i < data_pokemons.length; i++) {
-        
+        // Créer une div par pokémons
         let pokemon_container = document.createElement("div");
         parent_element.appendChild(pokemon_container);
         
@@ -34,7 +34,6 @@ function shows_data(data_pokemons){
           //  let parent_img_element = document.getElementById("pokemon_img_containers");
             pokemon_container.appendChild(pokemon_img);
           });
-
         
     }
     console.log(data_pokemons);
