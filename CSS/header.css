@@ -12,9 +12,13 @@ h1 {
 }
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     background-color: aqua;
     position : sticky;
+}
+#dropdow_menu {
+    display: none;
+    list-style-type: none;
 }
 
 @media screen and (max-width: 800px) {
