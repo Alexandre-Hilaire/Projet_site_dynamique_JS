@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Games</title>
 </head>
+
 <body>
     <header>
         <h1>Games</h1>
         <nav>
-
+            <div class="dropdown_feature">
+                <button id="dropdown_button">Menu déroulant</button>
+                <div class="menu_buttons" id="dropdown_menu">
+                    <ul>
+                        <a href="../index.html">
+                            <button>Acceuil</button>
+                        </a>
+                        <a href="gallery.html">
+                            <button>Gallerie</button>
+                        </a>
+                        <a href="pages/games.html">
+                            <button>Jeux</button>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <p>les jeux</p>
     </main>
-    
+
     <footer>
         <div class="contact">
             <p>contact</p>
@@ -29,5 +46,7 @@
             <p>réseaux</p>
         </div>
     </footer>
+    <script src="../scripts/dropdown_menu.js"></script>
 </body>
+
 </html>
