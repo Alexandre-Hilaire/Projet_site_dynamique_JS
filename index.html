@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Acceuil Salon Gaming</title>
 </head>
+
 <body>
     <header>
         <h1>Salon Gaming</h1>
         <nav>
-            <button id="dropdown_menu">Menu déroulant</button>
-            <ul>
-                <li><a href="index.html">Acceuil</a></li>
-                <li><a href="/pages/gallery.html">Gallerie</a></li>
-                <li><a href="/pages/games.html">Jeux</a></li>
-            </ul>
+            <div class="dropdown_feature">
+                <button id="dropdown_button">Menu déroulant</button>
+                <div class="menu_buttons" id="dropdown_menu">
+                    <ul>
+                        <a href="index.html">
+                            <button>Acceuil</button>
+                        </a>
+                        <a href="pages/gallery.html">
+                            <button>Gallerie</button>
+                        </a>
+                        <a href="pages/games.html">
+                            <button>Jeux</button>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <div class="index-main-container">
             <div id="pokemon_container">
-                
+
             </div>
         </div>
-    <form method ="GET" class="form">
-        <label for="title">
+        <form method="GET" class="form">
+            <label for="title">
                 Titre de l'article
-        </label>
-        <input type="title" placeholder="titre de l'article">
-        <label for="artcile_content">Entrez le contenu de l'article</label>
-        <textarea name="artcile_content" id="" cols="30" rows="10" placeholder="Ecrivez le contenu de votre article"></textarea>
-        <input type="submit">
-    </form>
+            </label>
+            <input type="title" placeholder="titre de l'article">
+            <label for="artcile_content">Entrez le contenu de l'article</label>
+            <textarea name="artcile_content" id="" cols="30" rows="10"
+                placeholder="Ecrivez le contenu de votre article"></textarea>
+            <input type="submit">
+        </form>
     </main>
-    
+
     <footer>
         <div class="contact">
             <p>contact</p>
@@ -48,5 +61,7 @@
         </div>
     </footer>
     <script src="scripts/feed.js"></script>
+    <script src="scripts/dropdown_menu.js"></script>
 </body>
+
 </html>

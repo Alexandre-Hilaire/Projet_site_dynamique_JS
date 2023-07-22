@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Gallery</title>
 </head>
+
 <body>
     <header>
         <h1>Gallery</h1>
         <nav>
-            <p>nav bar</p>
+            <div class="dropdown_feature">
+                <button id="dropdown_button">Menu déroulant</button>
+                <div class="menu_buttons" id="dropdown_menu">
+                    <ul>
+                        <a href="../index.html">
+                            <button>Acceuil</button>
+                        </a>
+                        <a href="pages/gallery.html">
+                            <button>Gallerie</button>
+                        </a>
+                        <a href="games.html">
+                            <button>Jeux</button>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    
+
     <main>
         <div class="pub">
             <p>le bandeau pub</p>
@@ -24,7 +41,7 @@
             <input type="button" value="Bouton colonne">
         </div>
         <div class="pics">
-            
+
             <img src="../pics/test_image.jpeg" alt="test">
             <img src="../pics/test_image.jpeg" alt="test">
             <img src="../pics/test_image.jpeg" alt="test">
@@ -39,7 +56,7 @@
             <img src="../pics/test_image.jpeg" alt="test">
         </div>
     </main>
-    
+
     <footer>
         <div class="contact">
             <p>contact</p>
@@ -50,6 +67,10 @@
         <div class="social-networks">
             <p>réseaux</p>
         </div>
+
     </footer>
+
+    <script src="../scripts/dropdown_menu.js"></script>
 </body>
+
 </html>
