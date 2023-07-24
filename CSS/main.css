@@ -25,6 +25,8 @@ main {
 }
 .pics img {
     margin: 5px;
+    height: 200px;
+    width: 200px;
 }
 .gallery_buttons {
     display: flex;
