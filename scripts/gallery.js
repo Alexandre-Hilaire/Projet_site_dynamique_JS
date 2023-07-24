@@ -7,7 +7,7 @@ function gallery_col (){
         pics.style.flexDirection = "column";
     }
     else{
-        pics.style.flexDirection = "row";
+        pics.style.flexDirection = "column";
     }
 }
 function gallery_mozaic (){
@@ -15,7 +15,7 @@ function gallery_mozaic (){
         pics.style.flexDirection = "row";
     }
     else{
-        pics.style.flexDirection = "column"
+        pics.style.flexDirection = "row"
     }
 }
 col_button.addEventListener("click", gallery_col);
