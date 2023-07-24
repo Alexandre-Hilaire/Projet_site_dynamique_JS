@@ -25,7 +25,7 @@ nav {
 
 #dropdown_menu {
     display: none;
-    list-style-type: none;
+    list-style-type: none;     /* Efface les points de la liste à puces */
     position: absolute;
     top: 100%;
     left: 0;
@@ -38,8 +38,7 @@ nav {
 }
 
 #dropdown_menu.show {
-    display: block;
-    /* Afficher lorsque le bouton est cliqué */
+    display: block;     /* Afficher lorsque le bouton est cliqué */
 }
 
 #dropdown_button {
@@ -49,14 +48,11 @@ nav {
     border: 2px, solid, black;
     background-color: transparent;
     cursor: pointer;
-    width: 100%;
-
-    /* Remplir la largeur du conteneur */
+    width: 100%;     /* Remplir la largeur du conteneur */
 }
 
 #dropdown_menu button:not(:last-child) {
-    margin-bottom: 4px;
-    /* Ajouter un espace entre les boutons */
+    margin-bottom: 4px;     /* Ajouter un espace entre les boutons */
 }
 
 @media screen and (max-width: 800px) {}
