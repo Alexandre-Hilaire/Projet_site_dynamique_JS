@@ -1,16 +1,9 @@
-// const name = document.getElementById("articles");
-// fetch("https://pokeapi.co/api/v2/pokemon/")
-// .then(response => response.json())
-// .then(data => console.log(data.results[0].name))
-// .catch(error => alert("erreur : " + error));
-
-
 function shows_data(data_pokemons){
 
-    let parent_element = document.getElementById("pokemon_container");
-    let pokemons_list = [];
-    let pokemons_url = [];
-    let pokemons_img_url = [];
+    let parent_element = document.getElementById("pokemon_container"); // L'élément qui va contenir nos articles
+    let pokemons_list = []; // Tableau dans lequel on récupere la liste les pokemons
+    let pokemons_url = []; // Tableau dans lequel on récupère les url de chaque pokémons
+    let pokemons_img_url = []; //Tableau dans lequel on récupère les url des images de chaque pokémons
     for (let i = 0; i < data_pokemons.length; i++) {
         // Créer une div par pokémons
         let pokemon_container = document.createElement("div");
@@ -45,6 +38,6 @@ function shows_data(data_pokemons){
 console.log(1);
 fetch("https://pokeapi.co/api/v2/pokemon/") // Va me chercher les infos à cette url
     .then(response => response.json()) // mets moi les infos dans un .json
-    .then(response => shows_data(response.results)); 
+    .then(response => shows_data(response.results)); // Traite les données avec la fonction
 
 console.log(2);
