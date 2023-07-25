@@ -33,7 +33,7 @@ function add_img (){
     let parent_element = document.getElementById("pics")
     let new_img = document.createElement("img");
     new_img.setAttribute("src", url);
-    new_img.setAttribute("class", "pic");
+    new_img.className="pic";
     parent_element.appendChild(new_img);
 
 }
