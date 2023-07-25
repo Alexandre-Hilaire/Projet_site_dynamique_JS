@@ -10,6 +10,7 @@ form.addEventListener("submit", (event) => {
     // Création de la nouvelle div
     let parent_element = document.getElementById("pokemon_container"); 
     let pokemon_container = document.createElement("div");
+    pokemon_container.setAttribute("class", "removable");
     parent_element.appendChild(pokemon_container);
     // Création du nom du pokémon
     let pokemon_name = document.createElement("p");
@@ -19,6 +20,12 @@ form.addEventListener("submit", (event) => {
     let pokemon_img = document.createElement("img");
     pokemon_img.setAttribute("src", img_link);
     pokemon_container.appendChild(pokemon_img);
+    //Création des bouttons de suppression
+    let remove_button = document.createElement("button");
+    remove_button.setAttribute ("id", "remove_button");
+    let button_text = document.createTextNode("Remove");
+    remove_button.appendChild(button_text);
+    pokemon_container.appendChild(remove_button);
     // Réinitialisation des champs
     document.getElementById("pokemon_name").value="";
     document.getElementById("img_link").value="insérer le lien de l'image";

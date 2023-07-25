@@ -12,6 +12,7 @@ function shows_data(data_pokemons){
         // Affichage des noms
         pokemons_list[i] = data_pokemons[i].name;
         let pokemon_name = document.createElement("p");
+        pokemon_name.classList.add("removable");
         pokemon_container.appendChild(pokemon_name);
         pokemon_name.innerHTML = pokemons_list[i];
     
@@ -22,6 +23,7 @@ function shows_data(data_pokemons){
           .then(response => {
             pokemons_img_url[i] = response.sprites.other["official-artwork"].front_default;
             let pokemon_img = document.createElement("img");
+            pokemon_img.classList.add("removable");
             pokemon_img.setAttribute("src", pokemons_img_url[i]);
             pokemon_container.appendChild(pokemon_img);
           });

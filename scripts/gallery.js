@@ -34,7 +34,12 @@ function add_img (){
     let new_img = document.createElement("img");
     new_img.setAttribute("src", url);
     new_img.className="pic";
+    new_img.classList.add("removable");
     parent_element.appendChild(new_img);
-
+    let remove_button = document.createElement("button");
+    remove_button.className = "remove_button";
+    let button_text = document.createTextNode("Remove");
+    remove_button.appendChild(button_text);
+    parent_element.appendChild(remove_button);
 }
 add_pics.addEventListener("click", add_img);

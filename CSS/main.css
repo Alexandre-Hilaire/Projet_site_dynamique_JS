@@ -49,6 +49,10 @@ main {
     align-items: center;
     background-color: aquamarine;
 }
+.remove_button {
+    display: flex;
+    justify-content: right;
+}
 
 @media screen and (max-width: 800px) {
     
