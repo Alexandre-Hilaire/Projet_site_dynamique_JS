@@ -31,8 +31,9 @@ function add_img (){
     
     let url = prompt("Entrez l\'url de la nouvelle image");
     let parent_element = document.getElementById("pics")
-    let new_img = document.createElement("img class=pic");
+    let new_img = document.createElement("img");
     new_img.setAttribute("src", url);
+    new_img.setAttribute("class", "pic");
     parent_element.appendChild(new_img);
 
 }
