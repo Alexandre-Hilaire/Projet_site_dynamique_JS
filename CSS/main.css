@@ -1,8 +1,5 @@
 main {
     background-color: grey;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
     align-items: center;
 }
 .index-main-container {
@@ -12,26 +9,40 @@ main {
     align-items: center;
     background-color: antiquewhite;
 }
+/* La page Gallerie */
 .pub {
     display: flex;
     justify-content: center;
     
 }
-.pics {
+#pics {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
-.pics img {
+#pics img {
     margin: 5px;
-    height: 200px;
-    width: 200px;
+    object-fit: contain;
+}
+
+.pic {
+    width : 30%;
+    margin : 0 auto;
+    height : 30%;
+    margin: 5px;
 }
 .gallery_buttons {
     display: flex;
     justify-content: left;
 }
+.add {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+/* Le formulaire */
 .form {
     display: flex;
     flex-direction: column;
