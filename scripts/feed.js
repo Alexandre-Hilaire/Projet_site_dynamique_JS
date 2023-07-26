@@ -29,17 +29,10 @@ function shows_data(data_pokemons){
           });
         
     }
-    console.log(data_pokemons);
-    console.log(3);
-    console.log(pokemons_list);
-    console.log(data_pokemons[0].url);
-    console.log(pokemons_img_url);
 
 }
 
-console.log(1);
+
 fetch("https://pokeapi.co/api/v2/pokemon/") // Va me chercher les infos à cette url
     .then(response => response.json()) // mets moi les infos dans un .json
     .then(response => shows_data(response.results)); // Traite les données avec la fonction
-
-console.log(2);

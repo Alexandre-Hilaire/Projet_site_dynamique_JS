@@ -13,7 +13,9 @@ main {
 .pub {
     display: flex;
     justify-content: center;
-    
+}
+.caroussel {
+    object-fit: contain;
 }
 #pics {
     display: flex; 

@@ -41,5 +41,13 @@ function add_img (){
     let button_text = document.createTextNode("Remove");
     remove_button.appendChild(button_text);
     parent_element.appendChild(remove_button);
+
+    remove_button.addEventListener("click", (event) => {
+        let img = event.target.previousSibling; // L'image précède le bouton dans le DOM
+        if (img.classList.contains("pic")) {
+            img.remove();
+            event.target.remove(); // Supprime le bouton
+        }
+    });
 }
 add_pics.addEventListener("click", add_img);
