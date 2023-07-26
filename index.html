@@ -42,9 +42,12 @@
                 Nom du pokémon
             </label>
             <input type="title" placeholder="Insérez le nom du pokémon" id="pokemon_name">
+            <p class="error" id="name_error"></p> <!-- paragraphe vide dans lequel on va insérer les erreurs -->
+             
             <label for="img_link">Insérez le lien de l'image</label>
             <textarea name="img_link" id="img_link" cols="30" rows="10"
                 placeholder="Insérer le lien de l'image"></textarea>
+            <p class="error" id="img_link_error"></p>
             <input type="submit" id="send">
         </form>
     </main>

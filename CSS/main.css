@@ -55,6 +55,12 @@ main {
     display: flex;
     justify-content: right;
 }
+#pokemon_name{
+    background-color: none;
+}
+.error {
+    color: red; /* Style du texte en rouge pour les messages d'erreur */
+}
 
 @media screen and (max-width: 800px) {
     

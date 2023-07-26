@@ -30,6 +30,17 @@ mozaic_button.addEventListener("click", gallery_mozaic);
 function add_img (){
     
     let url = prompt("Entrez l\'url de la nouvelle image");
+    let url_regex = /^(http|https):\/\/[^ "]+$/; // Regex pour la validité de l'url
+    while (url.trim() == ""){ // Tant que le prompt est vide redemande
+        url = prompt("Entrez l\'url de la nouvelle image");
+        return;
+    }
+    if (!url_regex.test(url)){ // Tant que l'url est invalide redemande avec le message adatpé
+        url = prompt("Veuillez saisir une url valide");
+        return;
+    }
+    
+
     let parent_element = document.getElementById("pics")
     let new_img = document.createElement("img");
     new_img.setAttribute("src", url);
