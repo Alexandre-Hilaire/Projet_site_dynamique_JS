@@ -62,3 +62,5 @@ function add_img (){
     });
 }
 add_pics.addEventListener("click", add_img);
+
+// Le caroussel
