@@ -10,12 +10,30 @@ main {
     background-color: antiquewhite;
 }
 /* La page Gallerie */
-.pub {
+.carousel_container {
     display: flex;
+    position: relative;
     justify-content: center;
+    height: 1080px;
+    width: 100%;
+
 }
-.caroussel {
+
+.carousel {
+
+    position : absolute;
+    opacity : 0;
+    height: 100%;
+    width: 100%;
+}
+.carousel img {
     object-fit: contain;
+    height: 100%;
+    width: 100%;
+    
+}
+.active {
+    opacity : 1;
 }
 #pics {
     display: flex; 
