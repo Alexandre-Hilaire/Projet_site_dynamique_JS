@@ -16,6 +16,7 @@ main {
     justify-content: center;
     height: 1080px;
     width: 100%;
+    z-index: 1;
 
 }
 
@@ -25,6 +26,7 @@ main {
     opacity : 0;
     height: 100%;
     width: 100%;
+    z-index: 1;
 }
 .carousel img {
     object-fit: contain;

@@ -17,6 +17,7 @@ nav {
     justify-content: start;
     background-color: aqua;
     position: sticky;
+    z-index: 2;
 }
 
 .dropdown_feature {
@@ -29,7 +30,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: red;
     border: 3px solid gold;
     padding: 4px;
