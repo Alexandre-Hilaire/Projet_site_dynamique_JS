@@ -96,4 +96,6 @@ form.addEventListener("submit", (event) => {
     })
 
 });
-
+$('#send').click(function(){
+    alert("Vous avez ajouté un Pokémon !")
+})
